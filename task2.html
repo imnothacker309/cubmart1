@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CubMart Ordering Logic</title>
+    
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        color: #121827;
+        background: #f7f8fc;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      main {
+        width: min(92vw, 720px);
+        padding: 32px;
+        border: 1px solid #dde3ee;
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 20px 60px rgba(18, 24, 39, 0.1);
+      }
+
+      h1 { margin-top: 0; }
+
+      button {
+        padding: 12px 18px;
+        color: #fff;
+        background: #3563ff;
+        border: 0;
+        border-radius: 6px;
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      pre {
+        white-space: pre-wrap;
+        padding: 18px;
+        background: #eef3ff;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>CubMart Ordering Logic</h1>
+      <p>Open the browser console or click the button to run the prompt-based order flow.</p>
+      <button onclick="startOrder()">Start CubMart Order</button>
+      <pre id="receiptOutput">Your receipt will appear here.</pre>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

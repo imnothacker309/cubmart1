@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CubMart Gaming Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="store-app" id="storeApp">
+    <header id="top" class="site-header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#top">CubMart</a>
+          <input class="nav-toggle" type="checkbox" id="menu-toggle" aria-label="Open menu">
+          <label class="navbar-toggler custom-toggler" for="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <div class="nav-panel">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+              <li class="nav-item"><a class="nav-link" href="#why">Why Us</a></li>
+              <li class="nav-item shop-menu">
+                <a class="nav-link" href="#categories">Shop</a>
+                <div class="shop-dropdown">
+                  <a href="#consoles">Consoles</a>
+                  <a href="#games">Games</a>
+                  <a href="#gear">Accessories</a>
+                </div>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#spotlight">Deal</a></li>
+              <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+              <li class="nav-item"><a class="btn btn-shop" href="#products">Shop Now</a></li>
+              <li class="nav-item">
+                <a class="cart-link" href="#checkout" aria-label="Open cart checkout">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2Zm10 0c-1.1 0-1.99.9-1.99 2S15.9 22 17 22s2-.9 2-2-.9-2-2-2ZM7.2 14.5h7.95c.75 0 1.41-.41 1.75-1.03L20.7 6.5 18.95 5.5l-3.8 7H7.63L3.8 2H1v2h1.4l3.6 9.59-1.35 2.44C3.92 17.36 4.88 19 6.4 19H19v-2H6.4l.8-1.5Z"></path>
+                  </svg>
+                  <span class="cart-count" id="cartCount">0</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section class="hero">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+              <p class="eyebrow">Gaming setup, sorted</p>
+              <h1>Games, gear, and consoles in one clean shop.</h1>
+              <p class="hero-text">CubMart is a small gaming store page for players who want the basics fast: a console, a good controller, a headset, and something new to play tonight.</p>
+              <div class="hero-actions">
+                <a class="btn btn-shop btn-lg" href="#products">Browse products</a>
+                <a class="btn btn-outline-shop btn-lg" href="#spotlight">See today's deal</a>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="hero-photo">
+                <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1000&q=80" alt="Gaming desk with colorful lights">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section id="why" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Why shop with us</p>
+            <h2>Built like a real shop, without making it complicated.</h2>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <article class="info-card fade-in delay-1">
+                <h3>Helpful Categories</h3>
+                <p>Consoles, games, and accessories are split clearly, so customers do not have to scroll forever to find one item.</p>
+              </article>
+            </div>
+            <div class="col-md-4">
+              <article class="info-card fade-in delay-2">
+                <h3>Clear Product Cards</h3>
+                <p>Each product has a badge, short description, price, and three normal shopping actions.</p>
+              </article>
+            </div>
+            <div class="col-md-4">
+              <article class="info-card fade-in delay-3">
+                <h3>Delivery On Time</h3>
+                <p>The packaging is secure and the product is delivered on schedule.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="categories" class="category-band">
+        <div class="container">
+          <div class="category-links">
+            <a href="#consoles">Consoles</a>
+            <a href="#games">Games</a>
+            <a href="#gear">Accessories</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="products" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Featured products</p>
+            <h2>Nine picks for a better gaming setup.</h2>
+          </div>
+
+          <div id="consoles" class="product-category">
+            <h3>Consoles</h3>
+            <div class="row g-4">
+              <div class="col-md-6 col-lg-4">
+                <article class="product-card">
+                  <span class="badge text-bg-primary">Best Seller</span>
+                  <img src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?auto=format&fit=crop&w=700&q=80" alt="PlayStation console and controller">
+                  <div class="product-body">
+                    <h4>PlayStation 5 Slim Disc Edition</h4>
+                    <p>Disc console with DualSense controller and fast SSD loading.</p>
+                    <strong>EGP 24,950</strong>
+                    <div class="product-actions">
+                      <a class="btn btn-shop btn-sm" href="#contact">Buy Now</a>
+                      <a class="btn btn-outline-shop btn-sm" href="#cart">Add to Cart</a>
+                      <button class="details-link" type="button">View Details</button>
+                    </div>
+                    <div class="product-details">
+                      <p>825GB SSD, 4K gaming support, Blu-ray disc drive, and one DualSense wireless controller.</p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <article class="product-card">
+                  <span class="badge text-bg-success">In Stock</span>
+                  <img src="https://images.unsplash.com/photo-1621259182978-fbf93132d53d?auto=format&fit=crop&w=700&q=80" alt="Xbox style gaming controller">
+                  <div class="product-body">
+                    <h4>Xbox Series X 1TB</h4>
+                    <p>Microsoft's 1TB console for Game Pass, racing, sports, and online play.</p>
+                    <strong>EGP 23,950</strong>
+                    <div class="product-actions">
+                      <a class="btn btn-shop btn-sm" href="#contact">Buy Now</a>
+                      <a class="btn btn-outline-shop btn-sm" href="#cart">Add to Cart</a>
+                      <button class="details-link" type="button">View Details</button>
+                    </div>
+                    <div class="product-details">
+                      <p>Includes 1TB SSD storage, Xbox Wireless Controller, 4K gaming, and backward compatibility.</p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <article class="product-card">
+                  <span class="badge text-bg-warning">Portable</span>
+                  <img src="https://images.unsplash.com/photo-1578303512597-81e6cc155b3e?auto=format&fit=crop&w=700&q=80" alt="Handheld gaming console">
+                  <div class="product-body">
+                    <h4>Nintendo Switch OLED Model</h4>
+                    <p>Portable console with a bright OLED screen for home and handheld gaming.</p>
+                    <strong>EGP 17,450</strong>
+                    <div class="product-actions">
+                      <a class="btn btn-shop btn-sm" href="#contact">Buy Now</a>
+                      <a class="btn btn-outline-shop btn-sm" href="#cart">Add to Cart</a>
+                      <button class="details-link" type="button">View Details</button>
+                    </div>
+                    <div class="product-details">
+                      <p>7-inch OLED screen, 64GB internal storage, dock, Joy-Con controllers, and tabletop stand.</p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <div id="games" class="product-category">
+            <h3>Games</h3>
+            <div class="row g-4">
+              <div class="col-md-6 col-lg-4">
+                <article class="product-card">
+                  <span class="badge text-bg-danger">New</span>
+                  <img src="https://upload.wikimedia.org/wikipedia/en/1/14/Gran_Turismo_7_cover_art.jpg" alt="Gaming screen">
+                  <div class="product-body">
+                    <h4>Gran Turismo 7</h4>
+                    <p>PlayStation racing game with realistic cars, tracks, and tuning.</p>
+                    <strong>EGP 2,950</strong>
+                    <div class="product-actions">
+                      <a class="btn btn-shop btn-sm" href="#contact">Buy Now</a>
+                      <a class="btn btn-outline-shop btn-sm" href="#cart">Add to Cart</a>
+                      <button class="details-link" type="button">View Details</button>
+                    </div>
+                    <div class="product-details">
+                      <p>Physical PS5 copy with career mode, online races, photo mode, and detailed car customization.</p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <article class="product-card">
+                  <span class="badge text-bg-info">Co-op</span>
+                  <img src="https://ignitekeys.com/wp-content/uploads/2026/01/MV5BMGUwMWJkNGEtMjBhNC00MTNlLTgyZGYtMDUxOTQ4NzljNzE5XkEyXkFqcGdeQXVyMTEzMjE5NDg4._V1_FMjpg_UX1000_1-ezgif.com-jpg-to-webp-converter-600x840.webp" alt="Player holding a controller">
+                  <div class="product-body">
+                    <h4>It Takes Two</h4>
+                    <p>Co-op adventure game made for two players and a lot of teamwork.</p>
+                    <strong>EGP 2,200</strong>
+                    <div class="product-actions">
+                      <a class="btn btn-shop btn-sm" href="#contact">Buy Now</a>
+                      <a class="btn btn-outline-shop btn-sm" href="#cart">Add to Cart</a>
+                      <button class="details-link" type="button">View Details</button>
+                    </div>
+                    <div class="product-details">
+                      <p>Supports local and online co-op. Good choice for friends, siblings, or couch gaming nights.</p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <article class="product-card">
+                  <span class="badge text-bg-secondary">Digital</span>
+                  <img src="https://m.media-amazon.com/images/I/41xmfMrf8gL._AC_.jpg" alt="Video game controllers">
+                  <div class="product-body">
+                    <h4>PlayStation Store Gift Card</h4>
+                    <p>Digital credit for games, subscriptions, add-ons, and in-game items.</p>
+                    <strong>EGP 1,250</strong>
+                    <div class="product-actions">
+                      <a class="btn btn-shop btn-sm" href="#contact">Buy Now</a>
+                      <a class="btn btn-outline-shop btn-sm" href="#cart">Add to Cart</a>
+                      <button class="details-link" type="button">View Details</button>
+                    </div>
+                    <div class="product-details">
+                      <p>Code is sent after order confirmation. Useful for wallet credit and PlayStation Plus payments.</p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <div id="gear" class="product-category">
+            <h3>Accessories</h3>
+            <div class="row g-4">
+              <div class="col-md-6 col-lg-4">
+                <article class="product-card">
+                  <span class="badge text-bg-dark">Pro Pick</span>
+                  <img src="https://images.unsplash.com/photo-1599669454699-248893623440?auto=format&fit=crop&w=700&q=80" alt="Gaming headset">
+                  <div class="product-body">
+                    <h4>HyperX Cloud III Headset</h4>
+                    <p>Comfortable gaming headset with clear mic audio for ranked matches.</p>
+                    <strong>EGP 4,450</strong>
+                    <div class="product-actions">
+                      <a class="btn btn-shop btn-sm" href="#contact">Buy Now</a>
+                      <a class="btn btn-outline-shop btn-sm" href="#cart">Add to Cart</a>
+                      <button class="details-link" type="button">View Details</button>
+                    </div>
+                    <div class="product-details">
+                      <p>53mm drivers, detachable microphone, soft memory foam ear cushions, and PC/console support.</p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <article class="product-card">
+                  <span class="badge text-bg-primary">RGB</span>
+                  <img src="https://i.ebayimg.com/images/g/eCgAAOSwgtRjfWRD/s-l1200.jpg" alt="RGB gaming keyboard">
+                  <div class="product-body">
+                    <h4>Redragon K552 Kumara</h4>
+                    <p>Compact mechanical keyboard with bright lighting and a sturdy metal plate.</p>
+                    <strong>EGP 3,700</strong>
+                    <div class="product-actions">
+                      <a class="btn btn-shop btn-sm" href="#contact">Buy Now</a>
+                      <a class="btn btn-outline-shop btn-sm" href="#cart">Add to Cart</a>
+                      <button class="details-link" type="button">View Details</button>
+                    </div>
+                    <div class="product-details">
+                      <p>Tenkeyless layout, mechanical switches, RGB lighting, and a strong frame for daily gaming.</p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <article class="product-card">
+                  <span class="badge text-bg-success">Fast</span>
+                  <img src="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=700&q=80" alt="Gaming mouse">
+                  <div class="product-body">
+                    <h4>Logitech G502 HERO Mouse</h4>
+                    <p>Wired gaming mouse with precise tracking and programmable buttons.</p>
+                    <strong>EGP 1,950</strong>
+                    <div class="product-actions">
+                      <a class="btn btn-shop btn-sm" href="#contact">Buy Now</a>
+                      <a class="btn btn-outline-shop btn-sm" href="#cart">Add to Cart</a>
+                      <button class="details-link" type="button">View Details</button>
+                    </div>
+                    <div class="product-details">
+                      <p>HERO sensor, adjustable weights, 11 programmable buttons, and a comfortable shape for long sessions.</p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="spotlight" class="spotlight-section">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+              <img class="spotlight-img" src="https://images.unsplash.com/photo-1598550476439-6847785fcea6?auto=format&fit=crop&w=1000&q=80" alt="Gaming room with monitor and keyboard">
+            </div>
+            <div class="col-lg-6">
+              <p class="eyebrow">Today's deal</p>
+              <h2>Starter Setup Pack For Only EGP 1,950</h2>
+              <p>Grab a headset, keyboard, and mouse together. It is the kind of bundle I would put near the top of the page because most new players need all three anyway.</p>
+              <a class="btn btn-shop" href="#contact">Buy bundle</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="checkout" class="cart-section">
+        <div class="container">
+          <div class="cart-panel checkout-panel">
+            <div>
+              <p class="eyebrow">Checkout</p>
+              <h2>Your cart is ready.</h2>
+              <p>Add products from the shop, choose your governorate, then pick the payment method that works for you.</p>
+            </div>
+            <div class="checkout-grid">
+              <div class="checkout-box">
+                <h3>Cart items</h3>
+                <ul class="cart-items" id="cartItems">
+                  <li>Your cart is empty right now.</li>
+                </ul>
+                <div class="price-row">
+                  <span>Products</span>
+                  <strong id="cartSubtotal">EGP 0</strong>
+                </div>
+                <div class="price-row">
+                  <span>Shipping</span>
+                  <strong id="shippingCost">EGP 0</strong>
+                </div>
+                <div class="price-row total-row">
+                  <span>Total</span>
+                  <strong id="cartTotal">EGP 0</strong>
+                </div>
+              </div>
+
+              <form class="checkout-box">
+                <h3>Delivery details</h3>
+                <label for="governorate">Governorate</label>
+                <select class="form-control" id="governorate">
+                  <option value="0" data-days="Choose a governorate first">Choose governorate</option>
+                  <option value="60" data-days="1 to 2 days">Cairo - EGP 60</option>
+                  <option value="70" data-days="1 to 2 days">Giza - EGP 70</option>
+                  <option value="85" data-days="2 to 3 days">Alexandria - EGP 85</option>
+                  <option value="95" data-days="2 to 4 days">Dakahlia - EGP 95</option>
+                  <option value="100" data-days="2 to 4 days">Gharbia - EGP 100</option>
+                  <option value="115" data-days="3 to 5 days">Port Said - EGP 115</option>
+                  <option value="130" data-days="3 to 5 days">Assiut - EGP 130</option>
+                  <option value="145" data-days="4 to 6 days">Aswan - EGP 145</option>
+                </select>
+                <p class="delivery-note">Estimated delivery: <strong id="deliveryTime">Choose a governorate first</strong></p>
+
+                <label for="address">Full address</label>
+                <textarea class="form-control" id="address" rows="3" placeholder="Street, building number, floor, apartment, landmark"></textarea>
+
+                <label for="phone">Phone number</label>
+                <input class="form-control" type="tel" id="phone" placeholder="01XXXXXXXXX">
+
+                <h3 class="payment-title">Payment method</h3>
+                <div class="payment-methods">
+                  <label><input type="radio" name="payment" checked> Cash on delivery</label>
+                  <label><input type="radio" name="payment"> Vodafone Cash</label>
+                  <label><input type="radio" name="payment"> InstaPay</label>
+                  <label><input type="radio" name="payment"> Credit card</label>
+                </div>
+
+                <button class="btn btn-shop checkout-btn" type="submit">Place Order</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="reviews" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Customer reviews</p>
+            <h2>Short comments that sound like real shoppers.</h2>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-4"><blockquote class="review-card">"I received the order in the estimated time and the package was great and the product is working well."<cite>- Adam</cite></blockquote></div>
+            <div class="col-md-4"><blockquote class="review-card">"I really like the easy UI for the website that helped me order what i wanted easily"<cite>- Mohamed</cite></blockquote></div>
+            <div class="col-md-4"><blockquote class="review-card">"The consoles and accessories are amazing, especially the PS5."<cite>- Youssef</cite></blockquote></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-lg-5">
+              <p class="eyebrow">Checkout request</p>
+              <h2>Ask about an item or place an order.</h2>
+              <p>Use this form for a product question, bundle request, or a quick checkout message.</p>
+            </div>
+            <div class="col-lg-7">
+              <form class="contact-form">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="name">Name</label>
+                    <input class="form-control" type="text" id="name" placeholder="Your name">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="email">Email</label>
+                    <input class="form-control" type="email" id="email" placeholder="you@example.com">
+                  </div>
+                  <div class="col-12">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Example: I want the Starter Setup Pack"></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-shop" type="submit">Send Request</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <h2>CubMart</h2>
+            <p>A responsive gaming shop page made with HTML, CSS, and Bootstrap.</p>
+          </div>
+          <div class="col-md-4">
+            <h3>Shop</h3>
+            <a href="#consoles">Consoles</a>
+            <a href="#games">Games</a>
+            <a href="#gear">Accessories</a>
+          </div>
+          <div class="col-md-4">
+            <h3>Help</h3>
+            <a href="#contact">Contact</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#top">Back to top</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
