@@ -651,7 +651,7 @@ img {
   }
 }
 
-/* Container to hold multiple notifications if clicked fast */
+
 #notification-container {
   position: fixed;
   bottom: 20px;
@@ -662,9 +662,9 @@ img {
   gap: 10px;
 }
 
-/* The actual pop-up notification styling */
+
 .cart-toast {
-  background-color: #198754; /* Uses Bootstrap's success green */
+  background-color: #198754;
   color: white;
   padding: 12px 24px;
   border-radius: 8px;
@@ -676,12 +676,12 @@ img {
   transition: opacity 0.4s ease;
 }
 
-/* Class added by JS to fade it out */
+
 .cart-toast.fade-out {
   opacity: 0;
 }
 
-/* Animation to make it slide in from the right */
+
 @keyframes slideIn {
   from {
     transform: translateX(100%);
